@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	xmlns:tools="http://schemas.android.com/tools"
+
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:orientation="vertical">
+
+	<TextView
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:gravity="center"
+		android:text="High Point Pub"
+		android:textStyle="bold"
+		android:textSize="32dp"/>
+
+	<TextView
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_gravity="left"
+		android:text="Website: https://www.hipointpubac.com/"
+		android:textSize="16dp"
+		android:padding="10dp"/>
+
+	<TextView
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_gravity="left"
+		android:text="Drink Special: Jack and Coke"
+		android:textSize="16dp"
+		android:padding="10dp"/>
+
+	<TextView
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_gravity="left"
+		android:text="Food Special: Cheesesteak Eggrolls"
+		android:textSize="16dp"
+		android:padding="10dp"/>
+
+	<TextView
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_gravity="left"
+		android:text="Tonight's Events: Karaoke!"
+		android:textSize="16dp"
+		android:padding="10dp"/>
+
+	<CalendarView
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:minDate="12/01/2020"
+		android:maxDate="01/01/2021"/>
+
+	<Button
+		android:id="@+id/back_button"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:text="BACK"/>
+
+
+</LinearLayout>

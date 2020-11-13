@@ -1,0 +1,20 @@
+<resources>
+	<string name="app_name">CommonLink</string>
+	<string name="login_button">LOGIN</string>
+	<string name="username_edit">Username</string>
+	<string name="host_name">Host Name</string>
+	<string name="done">done</string>
+	<string name="update_menu_drink_items">Update menu/drink items</string>
+	<string name="add_special_events">Add Special Events</string>
+	<string name="update_menu_item">Update Menu Item</string>
+	<string name="update_food_item">Update Food Item</string>
+	<string name="add_cost">Add Cost</string>
+	<string name="update_drink_special">Update Drink Special</string>
+	<string name="event_title">Event Title</string>
+	<string name="update_special_events">Update Special Events</string>
+	<string name="date_of_event">Date of Event</string>
+	<string name="ticket_cost">Ticket Cost</string>
+	<string name="description_of_event">Description of Event</string>
+	<string name="location_button"></string>
+	<string name="back_button"></string>
+</resources>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:layout_gravity="center"
+	android:orientation="vertical">
+
+	<TextView
+		style="?android:listSeparatorTextViewStyle"
+		android:id="@+id/hostName"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:gravity="center"
+		android:text="@string/host_name" />
+
+	<Button
+		android:id="@+id/menuButton"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:gravity="center"
+		android:text="@string/update_menu_drink_items"/>
+
+	<Button
+		android:id="@+id/specialEventButton"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:gravity="center"
+		android:text="@string/add_special_events"/>
+
+</LinearLayout>

@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:layout_gravity="center"
+	android:orientation="vertical">
+
+	<TextView
+		style="?android:listSeparatorTextViewStyle"
+		android:id="@+id/hostName"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:gravity="center"
+		android:text="@string/host_name" />
+
+	<TextView
+		style="?actionMenuTextColor"
+		android:layout_width="match_parent"
+		android:layout_height="50dp"
+		android:gravity="center"
+		android:text="@string/update_special_events" />
+
+	<TextView
+		style="?actionMenuTextColor"
+		android:id="@+id/eventTitle"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:gravity="center"
+		android:text="@string/event_title" />
+
+	<LinearLayout
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:orientation="horizontal">
+
+		<EditText
+			android:id="@+id/eventTitleEditText"
+			android:layout_width="400dp"
+			android:layout_height="wrap_content"/>
+
+	</LinearLayout>
+
+	<LinearLayout
+		android:layout_width="wrap_content"
+		android:layout_height="70dp"
+		android:orientation="horizontal">
+
+		<TextView
+			android:id="@+id/eventDate"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="@string/date_of_event" />
+
+		<EditText
+			android:id="@+id/eventDateEditText"
+			android:layout_width="70dp"
+			android:layout_height="wrap_content"/>
+
+		<TextView
+			android:id="@+id/updateTicketCost"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="@string/ticket_cost"/>
+
+		<EditText
+			android:id="@+id/ticketCost"
+			android:layout_width="90dp"
+			android:layout_height="wrap_content" />
+
+
+	</LinearLayout>
+
+	<TextView
+		style="?actionMenuTextColor"
+		android:id="@+id/eventDescription"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:gravity="center"
+		android:text="@string/description_of_event" />
+
+	<LinearLayout
+		android:layout_width="wrap_content"
+		android:layout_height="70dp"
+		android:orientation="horizontal">
+
+
+		<EditText
+			android:id="@+id/eventDescriptionEditText"
+			android:layout_width="400dp"
+			android:layout_height="wrap_content"/>
+
+
+	</LinearLayout>
+
+	<Button
+		android:id="@+id/doneButton"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_gravity="center"
+		android:text="@string/done"/>
+
+</LinearLayout>

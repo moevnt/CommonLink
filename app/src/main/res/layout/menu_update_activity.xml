@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:layout_gravity="center"
+	android:orientation="vertical">
+
+	<TextView
+		style="?android:listSeparatorTextViewStyle"
+		android:id="@+id/hostName"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:gravity="center"
+		android:text="@string/host_name" />
+
+	<TextView
+		style="?actionMenuTextColor"
+		android:id="@+id/updateMenuItems"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:gravity="center"
+		android:text="@string/update_menu_item" />
+
+	<LinearLayout
+		android:layout_width="wrap_content"
+		android:layout_height="70dp"
+		android:orientation="horizontal">
+
+		<TextView
+			android:id="@+id/updateFood"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="@string/update_food_item" />
+
+		<EditText
+			android:id="@+id/updateFoodEditText"
+			android:layout_width="70dp"
+			android:layout_height="wrap_content"/>
+
+		<TextView
+			android:id="@+id/updateFoodCost"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="@string/add_cost"/>
+
+		<EditText
+			android:id="@+id/foodCost"
+			android:layout_width="90dp"
+			android:layout_height="wrap_content"/>
+
+	</LinearLayout>
+
+	<TextView
+		style="?actionMenuTextColor"
+		android:id="@+id/updateDrinkItems"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:gravity="center"
+		android:text="@string/update_drink_special" />
+
+	<LinearLayout
+		android:layout_width="wrap_content"
+		android:layout_height="70dp"
+		android:orientation="horizontal">
+
+		<TextView
+			android:id="@+id/updateDrink"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="@string/update_drink_special" />
+
+		<EditText
+			android:id="@+id/drinkSpecials"
+			android:layout_width="70dp"
+			android:layout_height="wrap_content"/>
+
+		<TextView
+			android:id="@+id/updateCostDrink"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="@string/add_cost"/>
+
+		<EditText
+			android:id="@+id/drinkCost"
+			android:layout_width="70dp"
+			android:layout_height="wrap_content" />
+
+	</LinearLayout>
+
+	<Button
+		android:id="@+id/menuDoneButton"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_gravity="center"
+		android:text="@string/done"/>
+
+</LinearLayout>
