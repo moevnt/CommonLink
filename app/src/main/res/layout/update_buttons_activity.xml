@@ -27,4 +27,19 @@
 		android:gravity="center"
 		android:text="@string/add_special_events"/>
 
+	<Button
+		android:id="@+id/location_update_button"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:text="@string/location_update_button"
+		/>
+
+	<Button
+		android:id="@+id/sign_out_button"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_gravity="center|bottom"
+		android:text="@string/sign_out_button"/>
+
 </LinearLayout>
+

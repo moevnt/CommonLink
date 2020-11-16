@@ -3,21 +3,22 @@ package com.example.commonlink
 import android.content.Context
 import android.content.Intent
 import android.os.Bundle
+import android.view.View
 import android.widget.Button
 import androidx.appcompat.app.AppCompatActivity
 
-class MenuUpdateActivity: AppCompatActivity() {
+class LocationActivity: AppCompatActivity() {
 
 	private lateinit var menuDoneButton: Button
 
 	override fun onCreate(savedInstanceState: Bundle?) {
 		super.onCreate(savedInstanceState)
-		setContentView(R.layout.menu_update_activity)
+		setContentView(R.layout.activity_location)
 
 		menuDoneButton = findViewById(R.id.menuDoneButton)
 
-		menuDoneButton.setOnClickListener {
-			val intent = updateButtonsActivity.newIntent(this@MenuUpdateActivity)
+		menuDoneButton.setOnClickListener { view: View ->
+			val intent = updateButtonsActivity.newIntent(this@LocationActivity)
 			startActivity(intent)
 
 		}
@@ -27,7 +28,7 @@ class MenuUpdateActivity: AppCompatActivity() {
 	companion object {
 		fun newIntent(packageContext: Context): Intent {
 
-			return Intent(packageContext, MenuUpdateActivity::class.java)
+			return Intent(packageContext, LocationActivity::class.java)
 		}
 	}
 

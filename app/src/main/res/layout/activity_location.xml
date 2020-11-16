@@ -6,31 +6,20 @@
 	android:orientation="vertical">
 
 	<TextView
-		style="?actionMenuTextColor"
+		style="?android:listSeparatorTextViewStyle"
+		android:id="@+id/hostName"
 		android:layout_width="match_parent"
-		android:layout_height="50dp"
+		android:layout_height="wrap_content"
 		android:gravity="center"
-		android:text="@string/update_special_events" />
+		android:text="@string/host_name" />
 
 	<TextView
 		style="?actionMenuTextColor"
-		android:id="@+id/eventTitle"
+		android:id="@+id/update_location_title"
 		android:layout_width="match_parent"
 		android:layout_height="wrap_content"
 		android:gravity="center"
-		android:text="@string/event_title" />
-
-	<LinearLayout
-		android:layout_width="wrap_content"
-		android:layout_height="wrap_content"
-		android:orientation="horizontal">
-
-		<EditText
-			android:id="@+id/eventTitleEditText"
-			android:layout_width="400dp"
-			android:layout_height="wrap_content"/>
-
-	</LinearLayout>
+		android:text="@string/update_location_title" />
 
 	<LinearLayout
 		android:layout_width="wrap_content"
@@ -38,54 +27,57 @@
 		android:orientation="horizontal">
 
 		<TextView
-			android:id="@+id/eventDate"
+			android:id="@+id/update_address"
 			android:layout_width="wrap_content"
 			android:layout_height="wrap_content"
-			android:text="@string/date_of_event" />
+			android:text="@string/update_address" />
 
 		<EditText
-			android:id="@+id/eventDateEditText"
-			android:layout_width="70dp"
+			android:id="@+id/updateAddressEditText"
+			android:layout_width="250dp"
+			android:layout_height="wrap_content"/>
+
+	</LinearLayout>
+
+	<TextView
+		style="?actionMenuTextColor"
+		android:id="@+id/update_hours"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:gravity="center"
+		android:text="@string/update_hours" />
+
+	<LinearLayout
+		android:layout_width="wrap_content"
+		android:layout_height="70dp"
+		android:orientation="horizontal">
+
+		<TextView
+			android:id="@+id/open_time"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="@string/open_time" />
+
+		<EditText
+			android:id="@+id/openTimeEditText"
+			android:layout_width="75dp"
 			android:layout_height="wrap_content"/>
 
 		<TextView
-			android:id="@+id/updateTicketCost"
+			android:id="@+id/closing_time"
 			android:layout_width="wrap_content"
 			android:layout_height="wrap_content"
-			android:text="@string/ticket_cost"/>
+			android:text="@string/closing_time"/>
 
 		<EditText
-			android:id="@+id/ticketCost"
-			android:layout_width="90dp"
+			android:id="@+id/closingTimeEditText"
+			android:layout_width="75dp"
 			android:layout_height="wrap_content" />
-
-
-	</LinearLayout>
-
-	<TextView
-		style="?actionMenuTextColor"
-		android:id="@+id/eventDescription"
-		android:layout_width="match_parent"
-		android:layout_height="wrap_content"
-		android:gravity="center"
-		android:text="@string/description_of_event" />
-
-	<LinearLayout
-		android:layout_width="wrap_content"
-		android:layout_height="70dp"
-		android:orientation="horizontal">
-
-
-		<EditText
-			android:id="@+id/eventDescriptionEditText"
-			android:layout_width="400dp"
-			android:layout_height="wrap_content"/>
-
 
 	</LinearLayout>
 
 	<Button
-		android:id="@+id/doneButton"
+		android:id="@+id/menuDoneButton"
 		android:layout_width="wrap_content"
 		android:layout_height="wrap_content"
 		android:layout_gravity="center"

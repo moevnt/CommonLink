@@ -11,6 +11,7 @@
 		android:theme="@style/Theme.CommonLink">
 		<activity android:name=".MainActivity"/>
 		<activity android:name=".LocationPageActivity"/>
+		<activity android:name=".LocationActivity"/>
 		<activity android:name=".MenuUpdateActivity"/>
 		<activity android:name=".updateButtonsActivity"/>
 		<activity android:name=".EventUpdateActivity"/>

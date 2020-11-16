@@ -11,9 +11,9 @@ class updateButtonsActivity : AppCompatActivity() {
 
 	private lateinit var menuButton: Button
 	private lateinit var specialEventButton: Button
-	private lateinit var hostName: TextView
+	private lateinit var signOutButton: Button
+	private lateinit var locationButton : Button
 
-	private val REQUEST = 0
 	private val REQUESTED = "requested"
 	private var request = true
 
@@ -24,6 +24,8 @@ class updateButtonsActivity : AppCompatActivity() {
 		request = intent.getBooleanExtra(REQUESTED, true)
 		menuButton = findViewById(R.id.menuButton)
 		specialEventButton = findViewById(R.id.specialEventButton)
+		signOutButton = findViewById(R.id.sign_out_button)
+		locationButton = findViewById(R.id.location_update_button)
 
 
 		menuButton.setOnClickListener {
@@ -36,15 +38,22 @@ class updateButtonsActivity : AppCompatActivity() {
 			startActivity(intent)
 		}
 
+		signOutButton.setOnClickListener {
+			val intent = LoginActivity.newIntent(this@updateButtonsActivity)
+			startActivity(intent)
+		}
 
+		locationButton.setOnClickListener {
+			val intent = LocationActivity.newIntent(this@updateButtonsActivity)
+			startActivity(intent)
+		}
 
 	}
 
 	companion object {
 		fun newIntent(packageContext: Context): Intent {
 
-			var intent = Intent(packageContext, updateButtonsActivity::class.java)
-			return intent
+			return Intent(packageContext, updateButtonsActivity::class.java)
 		}
 	}
 }

@@ -17,4 +17,12 @@
 	<string name="description_of_event">Description of Event</string>
 	<string name="location_button"></string>
 	<string name="back_button"></string>
+	<string name="sign_out_button">Sign out</string>
+	<string name="location_update_button">Update Location Information</string>
+	<string name="update_location_title">Hi Point Pub</string>
+	<string name="update_address">Update Address</string>
+	<string name="update_hours">Update Hours</string>
+	<string name="open_time">Open Time</string>
+	<string name="closing_time">Closing Time</string>
+
 </resources>
