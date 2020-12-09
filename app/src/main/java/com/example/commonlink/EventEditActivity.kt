@@ -6,29 +6,27 @@ import android.os.Bundle
 import android.widget.Button
 import androidx.appcompat.app.AppCompatActivity
 
-class MenuUpdateActivity: AppCompatActivity() {
+class EventEditActivity: AppCompatActivity() {
 
-	private lateinit var menuDoneButton: Button
+	private lateinit var doneButton : Button
 
 	override fun onCreate(savedInstanceState: Bundle?) {
 		super.onCreate(savedInstanceState)
-		setContentView(R.layout.menu_update_activity)
+		setContentView(R.layout.event_edit_activity)
 
-		menuDoneButton = findViewById(R.id.menuDoneButton)
+		doneButton = findViewById(R.id.doneButton)
 
-		menuDoneButton.setOnClickListener {
-			val intent = updateButtonsActivity.newIntent(this@MenuUpdateActivity)
+		doneButton.setOnClickListener {
+			val intent = updateButtonsActivity.newIntent(this@EventEditActivity)
 			startActivity(intent)
-
 		}
+
 
 	}
 
 	companion object {
 		fun newIntent(packageContext: Context): Intent {
-
-			return Intent(packageContext, MenuUpdateActivity::class.java)
+			return Intent(packageContext, EventEditActivity::class.java)
 		}
 	}
-
 }

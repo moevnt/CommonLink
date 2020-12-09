@@ -4,7 +4,6 @@ import android.content.Context
 import android.content.Intent
 import android.os.Bundle
 import android.widget.Button
-import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
 
 class updateButtonsActivity : AppCompatActivity() {
@@ -29,12 +28,12 @@ class updateButtonsActivity : AppCompatActivity() {
 
 
 		menuButton.setOnClickListener {
-			val intent = MenuUpdateActivity.newIntent(this@updateButtonsActivity)
+			val intent = MenuEditActivity.newIntent(this@updateButtonsActivity)
 			startActivity(intent)
 		}
 
 		specialEventButton.setOnClickListener {
-			val intent = EventUpdateActivity.newIntent(this@updateButtonsActivity)
+			val intent = EventEditActivity.newIntent(this@updateButtonsActivity)
 			startActivity(intent)
 		}
 
@@ -44,7 +43,7 @@ class updateButtonsActivity : AppCompatActivity() {
 		}
 
 		locationButton.setOnClickListener {
-			val intent = LocationActivity.newIntent(this@updateButtonsActivity)
+			val intent = LocationEditActivity.newIntent(this@updateButtonsActivity)
 			startActivity(intent)
 		}
 

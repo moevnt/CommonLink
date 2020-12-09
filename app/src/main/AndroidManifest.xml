@@ -3,6 +3,7 @@
 	package="com.example.commonlink">
 
 	<application
+		android:name="LocationIntentApplication"
 		android:allowBackup="true"
 		android:icon="@mipmap/ic_launcher"
 		android:label="@string/app_name"
@@ -11,10 +12,10 @@
 		android:theme="@style/Theme.CommonLink">
 		<activity android:name=".MainActivity"/>
 		<activity android:name=".LocationPageActivity"/>
-		<activity android:name=".LocationActivity"/>
-		<activity android:name=".MenuUpdateActivity"/>
+		<activity android:name=".LocationEditActivity"/>
+		<activity android:name=".MenuEditActivity"/>
 		<activity android:name=".updateButtonsActivity"/>
-		<activity android:name=".EventUpdateActivity"/>
+		<activity android:name=".EventEditActivity"/>
 		<activity android:name=".LoginActivity">
 			<intent-filter>
 				<action android:name="android.intent.action.MAIN" />
