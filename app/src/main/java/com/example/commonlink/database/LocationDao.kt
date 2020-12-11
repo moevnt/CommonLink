@@ -12,7 +12,7 @@ interface LocationDao {
     fun getLocations() : LiveData<List<Location>>
 
     @Query("SELECT * FROM Location WHERE name = (:id)")
-    fun getLocation(id : UUID) : LiveData<Location?>
+    fun getLocation(id : UUID) : LiveData<Location>
 
     @Insert
     fun addLocation(location: Location)

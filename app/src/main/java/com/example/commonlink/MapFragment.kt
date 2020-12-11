@@ -3,6 +3,7 @@ package com.example.commonlink
 import android.os.Bundle
 import android.util.Log
 import android.view.View
+import android.view.ViewParent
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProviders
@@ -33,11 +34,12 @@ class MapFragment : Fragment(), OnMapReadyCallback {
 					}
 				}
 		)
+
+
 	}
 
 	override fun onCreate(savedInstanceState: Bundle?) {
 		super.onCreate(savedInstanceState)
-
 
 
 	}

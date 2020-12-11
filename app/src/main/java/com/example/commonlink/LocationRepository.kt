@@ -23,7 +23,7 @@ class LocationRepository private constructor(context: Context){
 
 	fun getLocations() : LiveData<List<Location>> = locationDao.getLocations()
 
-	fun getLocation(id : UUID) : LiveData<Location?> = locationDao.getLocation(id)
+	fun getLocation(id : UUID) : LiveData<Location> = locationDao.getLocation(id)
 
 	fun addLocation(location: Location) {
 
