@@ -21,21 +21,21 @@ class updateButtonsActivity : AppCompatActivity() {
 		setContentView(R.layout.update_buttons_activity)
 
 		request = intent.getBooleanExtra(REQUESTED, true)
-		menuButton = findViewById(R.id.menuButton)
-		specialEventButton = findViewById(R.id.specialEventButton)
+//		menuButton = findViewById(R.id.menuButton)
+//		specialEventButton = findViewById(R.id.specialEventButton)
 		signOutButton = findViewById(R.id.sign_out_button)
 		locationButton = findViewById(R.id.location_update_button)
 
 
-		menuButton.setOnClickListener {
-			val intent = MenuEditActivity.newIntent(this@updateButtonsActivity)
-			startActivity(intent)
-		}
-
-		specialEventButton.setOnClickListener {
-			val intent = EventEditActivity.newIntent(this@updateButtonsActivity)
-			startActivity(intent)
-		}
+//		menuButton.setOnClickListener {
+//			val intent = MenuEditActivity.newIntent(this@updateButtonsActivity)
+//			startActivity(intent)
+//		}
+//
+//		specialEventButton.setOnClickListener {
+//			val intent = EventEditActivity.newIntent(this@updateButtonsActivity)
+//			startActivity(intent)
+//		}
 
 		signOutButton.setOnClickListener {
 			val intent = LoginActivity.newIntent(this@updateButtonsActivity)

@@ -7,45 +7,27 @@
 
 	<TextView
 		style="?android:listSeparatorTextViewStyle"
-		android:id="@+id/hostName"
 		android:layout_width="match_parent"
 		android:layout_height="wrap_content"
 		android:gravity="center"
-		android:text="@string/host_name" />
-
-	<TextView
-		style="?actionMenuTextColor"
-		android:id="@+id/update_location_title"
-		android:layout_width="match_parent"
-		android:layout_height="wrap_content"
-		android:gravity="center"
-		android:text="@string/update_location_title" />
+		android:text="ENTER LOCATION INFORMATION" />
 
 	<LinearLayout
-		android:layout_width="wrap_content"
-		android:layout_height="70dp"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
 		android:orientation="horizontal">
 
 		<TextView
-			android:id="@+id/update_address"
-			android:layout_width="wrap_content"
-			android:layout_height="wrap_content"
-			android:text="@string/update_address" />
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:text="Location Name"
+		/>
 
 		<EditText
-			android:id="@+id/updateAddressEditText"
-			android:layout_width="250dp"
-			android:layout_height="wrap_content"/>
-
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:id="@+id/locaiton_name_edit_text"/>
 	</LinearLayout>
-
-	<TextView
-		style="?actionMenuTextColor"
-		android:id="@+id/update_hours"
-		android:layout_width="match_parent"
-		android:layout_height="wrap_content"
-		android:gravity="center"
-		android:text="@string/update_hours" />
 
 	<LinearLayout
 		android:layout_width="wrap_content"
@@ -56,10 +38,10 @@
 			android:id="@+id/open_time"
 			android:layout_width="wrap_content"
 			android:layout_height="wrap_content"
-			android:text="@string/open_time" />
+			android:text="Latitude" />
 
 		<EditText
-			android:id="@+id/openTimeEditText"
+			android:id="@+id/LatEditText"
 			android:layout_width="75dp"
 			android:layout_height="wrap_content"/>
 
@@ -67,10 +49,10 @@
 			android:id="@+id/closing_time"
 			android:layout_width="wrap_content"
 			android:layout_height="wrap_content"
-			android:text="@string/closing_time"/>
+			android:text="Longitude"/>
 
 		<EditText
-			android:id="@+id/closingTimeEditText"
+			android:id="@+id/LongEditText"
 			android:layout_width="75dp"
 			android:layout_height="wrap_content" />
 

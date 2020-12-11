@@ -76,9 +76,7 @@ class LocationFragment : Fragment() {
 
 	private fun updateUI(){
 		nameField.text = location.name
-		addressField.text = location.address
-		hoursField.text = location.hours
-		websiteField.text = location.website
+
 	}
 
 	override fun onStart() {
