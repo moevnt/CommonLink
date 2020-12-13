@@ -39,22 +39,20 @@ class MainActivity : AppCompatActivity(), OnMapReadyCallback{
 	}
 
 	override fun onMapReady(googleMap: GoogleMap) {
-		val list = locationDetailViewModel.locationLiveData.value
+		val list = locationDetailViewModel.locationsLiveData.value
 
-		val lat = list.lat
-		val lon = list.lon
+
+		//parse through list and input into map
 
 
 		googleMap.addMarker(
 				MarkerOptions()
-						.position( LatLng(39.42412592503969, -74.49922338859906) )
-						.title("Hi Point")
+						.position(LatLng(39.423943596205696, -74.49930921928043))
+						.title("Hi-Point")
 		)
 
-		googleMap.mapType = GoogleMap.MAP_TYPE_HYBRID
-	}
-
-
+			googleMap.mapType = GoogleMap.MAP_TYPE_HYBRID
+		}
 
 	companion object {
 		fun newIntent(packageContext: Context): Intent {
@@ -62,6 +60,7 @@ class MainActivity : AppCompatActivity(), OnMapReadyCallback{
 			return Intent(packageContext, MainActivity::class.java)
 		}
 	}
+}
 
 //	override fun onLocationSelected(locationID: UUID) {
 //		val fragment = LocationFragment.newInstance(locationID)
@@ -72,4 +71,3 @@ class MainActivity : AppCompatActivity(), OnMapReadyCallback{
 //			.commit()
 //	}
 
-}

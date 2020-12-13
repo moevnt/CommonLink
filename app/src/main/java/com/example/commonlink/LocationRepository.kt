@@ -1,6 +1,7 @@
 package com.example.commonlink
 
 import android.content.Context
+import android.database.Cursor
 import androidx.lifecycle.LiveData
 import androidx.room.Room
 import com.example.commonlink.database.LocationDatabase
@@ -21,9 +22,9 @@ class LocationRepository private constructor(context: Context){
 
 	private val locationDao = database.locationDao()
 
-	fun getLocations() : LiveData<List<Location>> = locationDao.getLocations()
+	fun getLocations() : LiveData<List<Location?>> = locationDao.getLocations()
 
-	fun getLocation(id : UUID) : LiveData<Location> = locationDao.getLocation(id)
+	fun getLocation(id : UUID) : LiveData<Location?> = locationDao.getLocation(id)
 
 	fun addLocation(location: Location) {
 

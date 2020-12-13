@@ -58,14 +58,14 @@ class LocationListFragment : Fragment(){
 	override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
 		super.onViewCreated(view, savedInstanceState)
 
-		locationListViewModel.locationListLiveData.observe(
-				viewLifecycleOwner,
-				Observer {  locations ->
-					locations?.let{
-						updateUI(locations)
-					}
-				}
-		)
+//		locationListViewModel.locationListLiveData.observe(
+//				viewLifecycleOwner,
+//				Observer {  locations ->
+//					locations?.let{
+//						updateUI(locations)
+//					}
+//				}
+//		)
 	}
 
 	private fun updateUI(locations : List<Location>) {
