@@ -22,7 +22,7 @@ class LocationRepository private constructor(context: Context){
 
 	private val locationDao = database.locationDao()
 
-	fun getLocations() : LiveData<List<Location?>> = locationDao.getLocations()
+	fun getLocations() : LiveData<List<Location>> = locationDao.getLocations()
 
 	fun getLocation(id : UUID) : LiveData<Location?> = locationDao.getLocation(id)
 

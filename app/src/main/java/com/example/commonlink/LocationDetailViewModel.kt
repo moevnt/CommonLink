@@ -12,14 +12,12 @@ class LocationDetailViewModel: ViewModel() {
 	private val locationRepository = LocationRepository.get()
 	private val locationIdLiveData = MutableLiveData<UUID>()
 	private val locationsIdLiveData = MutableLiveData<List<UUID>>()
+	val locationListLiveData = locationRepository.getLocations()
 
-	var locationLiveData : LiveData<Location> =
+	var locationLiveData : LiveData<Location?> =
 			Transformations.switchMap(locationIdLiveData){
 				locationId -> locationRepository.getLocation(locationId)
 			}
-	var locationsLiveData : LiveData<List<Location?>> =
-			 locationRepository.getLocations()
-
 
 	fun loadLocation(locationId: UUID){
 		locationIdLiveData.value = locationId

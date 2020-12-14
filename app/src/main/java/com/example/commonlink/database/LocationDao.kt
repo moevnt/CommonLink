@@ -10,7 +10,7 @@ import java.util.*
 interface LocationDao {
 
     @Query("SELECT * FROM Location")
-    fun getLocations() : LiveData<List<Location?>>
+    fun getLocations() : LiveData<List<Location>>
 
     @Query("SELECT * FROM Location WHERE name = (:id)")
     fun getLocation(id : UUID) : LiveData<Location?>
